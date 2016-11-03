@@ -60,3 +60,108 @@ m['x'] -> x-components of all vectors
 to stop figure appearing twice
 
 ** Review interface of plot_line_intersection and line_intersection later
+
+* <2016-11-03 Thu>
+
+** How to get exchange energy from given m?
+
+These are issues #9 and #10 in micromagnetic model
+
+system.m = Field()
+system.m = (1, 0, 0)
+# get energy:  -> float
+system.hamiltonian.exchange.energy.
+# energy densisty -> scalar field
+system.hamiltonian.exchange.energy_density
+# get exchange field -> vector field
+system.hamiltonian.exchange.field
+# needs calling of OOMMF
+
+Step 1: implement this naively
+- everytime hamiltonian.INTERACTION.field, or - everytime
+  hamiltonian.INTERACTION.energy or - everytime
+  hamiltonian.INTERACTION.energy_density is called, we execute OOMMF
+  to retrieve that information.
+
+Step 2: develop an dependency engine
+- have some flag somewhere that records whether
+  - m
+  - H
+  - or interaction terms
+  have changed since we computed interaction data last with OOMMF
+
+- if the user requests any of the computed interactions, we check
+  whether we have cached data that is still up-to-date. If so, we
+  return the cached data. If not, we call OOMMF to compute the
+  interaction values.
+
+- Whenever we call OOMMF, we store all fields, energies and energy
+  densities to disk and cache them.
+
+** Terms and conditions
+
+- run: integer starting from 0. Increases everytime before we call
+  OOMMF.
+
+** File structure layout for multiple (calculator runs)
+- for a simulation run with name NAME, we have the following structure
+
+  /NAME/1
+  /NAME/2
+  /NAME/3
+  /NAME/4
+
+  Each subdirectory contains one OOMMF run, including the mif file,
+  the odt file, and all OMF files.
+
+  We may try to dump a textual summary of the micromagnetic model in
+  there as well.
+
+
+** The data table (dt or data.table?)
+- lives is system.dt
+- create pandas table that brings together all the data from the odt
+  files in the NAME/* directories
+- pandas table should contain:
+  - run number
+  - accumulate time if possible
+  - all the odt data
+  - missing data will be NaN; pandas should do this automatically
+
+** Data analysis
+Example
+  md.drive(system)
+  system.dt.plot['t', 'mx']
+
+  d = Data('stdprob3')
+  d = Data(system)
+
+  d is the same as
+
+  system.data
+
+** How to find spatially resolved data?
+Extend the data.table to include an extra column for every saved omf
+field (i.e. one column for demag field, one for demag energy density,
+one for magentisation), which contains the name of the file containing
+the data, and is empty if no data was saved.
+
+To retrieve a spatially resolved field, we 'just' need to identify the
+right row. Should offer some options to do that, ideally using pandas.
+
+Should be able to extend this so that if the user specification
+returns not just one row, but multiple ones, we return a list of field
+objects.
+
+Possible syntax
+
+# use pandas syntax
+rows = data.table(run=4 && have('demag'))
+# new functionality from
+data.field('demag', rows) to return list of field objects
+
+Location: keep the Data class in the oommfc repository FOR NOW, but
+move into its own repository when it has evolved a little.
+
+This data analysis tool will be useful on its own (i.e. outside the
+OOMMFC context) to OOMMF users.
