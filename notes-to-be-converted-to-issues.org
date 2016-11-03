@@ -1,0 +1,62 @@
+* Design review field class <2016-11-03 Thu 02:31> (GMT), New Orleans
+
+Marijan Beg, Mark Vousden, Hans Fangohr
+
+** Interface field m
+- m(r) with r = (x, y, z)
+- m.value is part of field, and supports constant tuple and function
+- m.value -> tuple, function, many tuples, array
+  (Example:
+
+  m.value = lamba r: (1, 0, 0)
+  m.array[0,0,0] = 42
+  m.value should return array now
+)
+
+if m.value is function, and the user asks for the array
+- m.array -> numpy array (ref, not copy)
+- m.mesh.coordinates -> tuples of float
+-       .indices -> tuples of int
+
+m.array[23,3,4]=42.0
+
+
+** Normalisation
+
+system = oc.System(name="stdprob3")
+system.mesh = mesh
+system.hamiltonian = oc.Exchange(A) + oc.UniaxialAnisotropy(K, u) + oc.Demag()
+system.m = df.Field(mesh, value=m_init, normalisedto=Ms)
+
+** Mesh in system
+Take 'mesh' from m.mesh
+
+system = oc.System(name="stdprob3")
+# system.mesh = mesh
+system.hamiltonian = oc.Exchange(A) + oc.UniaxialAnisotropy(K, u) + oc.Demag()
+system.m = df.Field(mesh, value=m_init, norm=Ms)
+
+system.m = df.Field(mesh, value=m_init)  # compute norm based on norm
+                                         # of m_init
+
+** Make norm a property:
+
+m.norm -> norm of all vectors (array)
+m.norm = n   # normalise vectors so that m.norm == n
+
+** average
+
+m.average -> spatial average (something like tuple(m.array.mean()))
+
+** m.f -> m._f
+** use structured array
+m['x'] -> x-components of all vectors
+** __repr__ -> as now, but include m.name
+** representation in notebook: holoviews object
+** m.name -> set with 'm' if system.m = Field
+          set as 'H_exchange', 'H_Demag' etc
+
+** plot_line_intersection: get rid of show() command
+to stop figure appearing twice
+
+** Review interface of plot_line_intersection and line_intersection later
