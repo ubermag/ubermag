@@ -5,7 +5,7 @@ with open("README.rst") as f:
 
 setuptools.setup(
     name="joommf",
-    version="0.1",
+    version="0.2",
     description=("A metapackage that includes oommfc and Jupyter notebook"),
     long_description=readme,
     url='https://joommf.github.io',
@@ -13,7 +13,8 @@ setuptools.setup(
     author_email='jupyteroommf@gmail.com',
     packages=setuptools.find_packages(),
     install_requires=["oommfc",
-                      "jupyter"],
+                      "jupyter",
+                      "pytest"],
     classifiers=['Development Status :: 3 - Alpha',
                  'License :: OSI Approved :: BSD License',
                  'Topic :: Scientific/Engineering :: Physics',
