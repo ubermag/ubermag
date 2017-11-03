@@ -4,4 +4,6 @@ RUN apt update -y
 RUN apt install -y apt-transport-https ca-certificates \
       lxc iptables curl python3-pip
 
-RUN python3 -m pip install --upgrade pip joommf
+RUN python3 -m pip install --upgrade pip joommf jupyterhub
+
+COPY oommfc/docs/ipynb/ .
