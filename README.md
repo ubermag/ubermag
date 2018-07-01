@@ -31,11 +31,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 
 ## About
 
-`joommf` is a Python package that provides:
-
-- An interface to the Object Oriented MicroMagnetic Framework [OOMMF](https://math.nist.gov/oommf/)
-
-- Integration of OOMMF simulations into the [Jupyter](http://jupyter.org) notebook
+`joommf` is a Python package that is a meta package for JOOMMF project intended for simple installation of all packages required to run JOOMMF.
 
 It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.5 or higher.
 
