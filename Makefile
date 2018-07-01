@@ -25,7 +25,8 @@ test-joommf:
 	$(PYTHON) -c "import sys; import micromagneticmodel as mm; sys.exit(mm.test())"
 	$(PYTHON) -c "import sys; import oommfc as oc; sys.exit(oc.test())"
 
-test-all: test-test test-coverage test-docs test-ipynb test-joommf
+# In test-all target test-docs is disabled because this package has no docs.
+test-all: test-test test-coverage test-ipynb test-joommf
 
 upload-coverage: SHELL:=/bin/bash
 upload-coverage:
