@@ -4,6 +4,20 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 <sup>1</sup> *European XFEL GmbH, Holzkoppel 4, 22869 Schenefeld, Germany*  
 <sup>2</sup> *Faculty of Engineering and the Environment, University of Southampton, Southampton SO17 1BJ, United Kingdom*  
 
+| Description | Badge |
+| --- | --- |
+| Latest release | [![PyPI version](https://badge.fury.io/py/joommf.svg)](https://badge.fury.io/py/joommf) |
+|                | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/joommf/badges/version.svg)](https://anaconda.org/conda-forge/joommf) |
+| Build | [![Build Status](https://travis-ci.org/joommf/joommf.svg?branch=master)](https://travis-ci.org/joommf/joommf) |
+|       | [![Build status](https://ci.appveyor.com/api/projects/status/a1cp833x8trei0d8?svg=true)](https://ci.appveyor.com/project/marijanbeg/joommf) |
+| Coverage | [![codecov](https://codecov.io/gh/joommf/joommf/branch/master/graph/badge.svg)](https://codecov.io/gh/joommf/joommf) |
+| Documentation | [![Documentation Status](https://readthedocs.org/projects/joommf/badge/?version=latest)](http://joommf.readthedocs.io/en/latest/?badge=latest) |
+| Binder | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/joommf/joommf/master?filepath=index.ipynb) |
+| Dependecies | [![Requirements Status](https://requires.io/github/joommf/joommf/requirements.svg?branch=master)](https://requires.io/github/joommf/joommf/requirements/?branch=master) |
+| License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
+
+# joommf dependencies overview
+
 |  | joommfutil | discretisedfield | oommfodt | micromagneticmodel | oommfc |
 | --- | --- | --- | --- | --- | --- |
 | Latest release | [![PyPI version](https://badge.fury.io/py/joommfutil.svg)](https://badge.fury.io/py/joommfutil) | [![PyPI version](https://badge.fury.io/py/discretisedfield.svg)](https://badge.fury.io/py/discretisedfield) | [![PyPI version](https://badge.fury.io/py/oommfodt.svg)](https://badge.fury.io/py/oommfodt) | [![PyPI version](https://badge.fury.io/py/micromagneticmodel.svg)](https://badge.fury.io/py/micromagneticmodel) | [![PyPI version](https://badge.fury.io/py/oommfc.svg)](https://badge.fury.io/py/oommfc) |
@@ -81,6 +95,10 @@ The most recent development version of `joommf` that is not yet released can be 
     python3 -m pip install --upgrade joommf
 
 **Note**: If you do not have `git` on your system, it can be installed by following the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+## Binder
+
+`joommf` can be used in the cloud via Binder. This does not require you to have anything installed and no files will be created on your machine. To use `joommf` in the cloud, follow this [link](https://mybinder.org/v2/gh/joommf/joommf/master?filepath=index.ipynb).
 
 ## Documentation
 
