@@ -4,7 +4,8 @@ import pkg_resources
 def test():
     import pytest  # pragma: no cover
     return pytest.main(["-v", "--pyargs", "joommfutil",
-                        "discretisedfield", "oommfodt",
+                        #"discretisedfield",
+                        "oommfodt",
                         "micromagneticmodel", "oommfc",
                         "joommf"])  # pragma: no cover
 
