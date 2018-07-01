@@ -19,10 +19,11 @@ install:
   - conda install --channel conda-forge oommf
   - python -m pip install --upgrade pip pytest nbval .
 
+# In test_script test docs is disabled because this package has no docs.
 test_script:
   - python -c "import joommf as jo; import sys; sys.exit(jo.test())"	
   - python -m pytest --nbval-lax docs\ipynb\
-  - python -m pytest --doctest-modules --ignore=oommfc\tests oommfc
+  # - python -m pytest --doctest-modules --ignore=joommf\tests joommf
   - python -c "import joommfutil as ju; import sys; sys.exit(ju.test())"
   - python -c "import discretisedfield as df; import sys; sys.exit(df.test())"
   - python -c "import oommfodt as oo; import sys; sys.exit(oo.test())"
