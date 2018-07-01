@@ -1,8 +1,8 @@
+import pytest
 import pkg_resources
 
 
 def test():
-    import pytest  # pragma: no cover
     return pytest.main(["-v", "--pyargs", "joommfutil",
                         #"discretisedfield",
                         "oommfodt",
