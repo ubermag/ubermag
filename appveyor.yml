@@ -1,0 +1,34 @@
+environment:
+  matrix:
+    - PYTHON_VERSION: 3.5
+      MINICONDA: C:\Miniconda3-x64
+    - PYTHON_VERSION: 3.6
+      MINICONDA: C:\Miniconda3-x64
+
+platform:
+  - x64
+
+build: off
+
+install:
+  - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%PATH%"
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  - "conda create -q -n test-environment python=%PYTHON_VERSION%"
+  - activate test-environment
+  - conda install --channel conda-forge oommf
+  - python -m pip install --upgrade pip pytest nbval .
+
+test_script:
+  - python -c "import joommf as jo; import sys; sys.exit(jo.test())"	
+  - python -m pytest --nbval-lax docs\ipynb\
+  - python -m pytest --doctest-modules --ignore=oommfc\tests oommfc
+  - python -c "import joommfutil as ju; import sys; sys.exit(ju.test())"
+  - python -c "import discretisedfield as df; import sys; sys.exit(df.test())"
+  - python -c "import oommfodt as oo; import sys; sys.exit(oo.test())"
+  - python -c "import micromagneticmodel as mm; import sys; sys.exit(mm.test())"
+  - python -c "import oommfc as oc; import sys; sys.exit(oc.test())"
+
+notifications:
+  - provider: Slack
+    incoming_webhook: https://hooks.slack.com/services/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
