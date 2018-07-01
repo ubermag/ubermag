@@ -16,7 +16,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 | Dependecies | [![Requirements Status](https://requires.io/github/joommf/joommf/requirements.svg?branch=master)](https://requires.io/github/joommf/joommf/requirements/?branch=master) |
 | License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
 
-# joommf dependencies overview
+# Dependencies overview
 
 |  | joommfutil | discretisedfield | oommfodt | micromagneticmodel | oommfc |
 | --- | --- | --- | --- | --- | --- |
