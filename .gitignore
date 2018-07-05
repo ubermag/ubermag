@@ -10,4 +10,4 @@ __pycache__
 __pycache__/
 build/
 dist/
-joommf.egg-info/
+*.egg-info/
