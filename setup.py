@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setuptools.setup(
     name='joommf',
-    version='0.8.3',
+    version='0.8.4',
     description='Meta package for JOOMMF project.',
     long_description=long_description,
     long_description_content_type='text/markdown',
