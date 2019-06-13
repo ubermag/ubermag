@@ -1,4 +1,4 @@
-# joommf
+# ubermag
 Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup>, and Hans Fangohr<sup>1,2</sup>
 
 <sup>1</sup> *European XFEL GmbH, Holzkoppel 4, 22869 Schenefeld, Germany*  
@@ -32,7 +32,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 
 ## About
 
-`joommf` is a Python package that is a meta package for Jupyter-OOMMF (JOOMMF) project intended for simple installation of all packages required to run JOOMMF.
+`ubermag` is a Python package that is a meta package for ubermag (formerly: Jupyter-OOMMF [JOOMMF]) project intended for simple installation of all packages required to run ubermag.
 
 It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.5 or higher.
 
