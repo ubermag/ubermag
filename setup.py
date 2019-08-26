@@ -4,17 +4,17 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='joommf',
-    version='0.8.4',
-    description='Meta package for JOOMMF project.',
+    name='ubermag',
+    version='0.1',
+    description='Meta package for Ubermag project.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://joommf.github.io',
-    author='Marijan Beg, Ryan A. Pepper, Thomas Kluyver, and Hans Fangohr',
-    author_email='jupyteroommf@gmail.com',
+    url='https://ubermag.github.io',
+    author=('Marijan Beg, Ryan A. Pepper, Thomas Kluyver, '
+            'and Hans Fangohr'),
     packages=setuptools.find_packages(),
-    install_requires=['oommfc',
-                      'jupyter'],
+    include_package_data = True,
+    install_requires=['oommfc'],
     classifiers=['Development Status :: 3 - Alpha',
                  'License :: OSI Approved :: BSD License',
                  'Programming Language :: Python :: 3 :: Only',

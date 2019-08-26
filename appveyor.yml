@@ -1,7 +1,5 @@
 environment:
   matrix:
-    - PYTHON_VERSION: 3.6
-      MINICONDA: C:\Miniconda3-x64
     - PYTHON_VERSION: 3.7
       MINICONDA: C:\Miniconda3-x64
 
@@ -19,17 +17,6 @@ install:
   - conda install --channel conda-forge oommf
   - python -m pip install --upgrade pip pytest nbval .
 
-# In test_script test docs is disabled because this package has no docs.
 test_script:
-  - python -c "import joommf as jo; import sys; sys.exit(jo.test())"	
+  - python -c "import ubermag as um; import sys; sys.exit(um.test())"	
   - python -m pytest --nbval-lax docs\ipynb\
-  # - python -m pytest --doctest-modules --ignore=joommf\tests joommf
-  - python -c "import joommfutil as ju; import sys; sys.exit(ju.test())"
-  - python -c "import discretisedfield as df; import sys; sys.exit(df.test())"
-  - python -c "import oommfodt as oo; import sys; sys.exit(oo.test())"
-  - python -c "import micromagneticmodel as mm; import sys; sys.exit(mm.test())"
-  - python -c "import oommfc as oc; import sys; sys.exit(oc.test())"
-
-notifications:
-  - provider: Slack
-    incoming_webhook: https://hooks.slack.com/services/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
