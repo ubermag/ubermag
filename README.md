@@ -8,7 +8,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 | --- | --- |
 | Latest release | [![PyPI version](https://badge.fury.io/py/joommf.svg)](https://badge.fury.io/py/joommf) |
 |                | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/joommf/badges/version.svg)](https://anaconda.org/conda-forge/joommf) |
-| Build | [![Build Status](https://travis-ci.org/joommf/joommf.svg?branch=master)](https://travis-ci.org/joommf/joommf) |
+| Build | [![Build Status](https://travis-ci.org/ubermag/ubermag.svg?branch=master)](https://travis-ci.org/ubermag/ubermag) |
 |       | [![Build status](https://ci.appveyor.com/api/projects/status/9njdacblobx1r6qh?svg=true)](https://ci.appveyor.com/project/marijanbeg/joommf) |
 | Coverage | [![codecov](https://codecov.io/gh/joommf/joommf/branch/master/graph/badge.svg)](https://codecov.io/gh/joommf/joommf) |
 | Documentation | [![Documentation Status](https://readthedocs.org/projects/joommf/badge/?version=latest)](http://joommf.readthedocs.io/en/latest/?badge=latest) |
