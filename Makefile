@@ -1,4 +1,4 @@
-PROJECT=joommf
+PROJECT=ubermag
 IPYNBPATH=docs/ipynb/*.ipynb
 CODECOVTOKEN=b0beeda5-9b5d-4418-bad5-09f209fc5e88
 PYTHON?=python3
@@ -18,15 +18,8 @@ test-docs:
 test-ipynb:
 	$(PYTHON) -m pytest --nbval $(IPYNBPATH)
 
-test-joommf:
-	$(PYTHON) -c "import sys; import joommfutil as ju; sys.exit(ju.test())"
-	$(PYTHON) -c "import sys; import discretisedfield as df; sys.exit(df.test())"
-	$(PYTHON) -c "import sys; import oommfodt as oo; sys.exit(oo.test())"
-	$(PYTHON) -c "import sys; import micromagneticmodel as mm; sys.exit(mm.test())"
-	$(PYTHON) -c "import sys; import oommfc as oc; sys.exit(oc.test())"
-
 # In test-all target test-docs is disabled because this package has no docs.
-test-all: test-test test-coverage test-ipynb test-joommf
+test-all: test-test test-coverage test-ipynb
 
 upload-coverage: SHELL:=/bin/bash
 upload-coverage:

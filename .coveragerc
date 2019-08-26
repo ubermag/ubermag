@@ -1,2 +1,2 @@
 [run]
-omit = joommf/tests/*
+omit = ubermag/tests/*
