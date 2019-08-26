@@ -1,10 +1,12 @@
-import joommf as jo
+import ubermag as um
+
 
 def test_version():
-    assert isinstance(jo.__version__, str)
-    assert '.' in jo.__version__
+    assert isinstance(um.__version__, str)
+    assert '.' in um.__version__
+
 
 def test_dependencies():
-    assert isinstance(jo.__dependencies__, list)
-    assert len(jo.__dependencies__) > 0
+    assert isinstance(um.__dependencies__, list)
+    assert len(um.__dependencies__) > 0
     
