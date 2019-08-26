@@ -11,7 +11,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 | Build | [![Build Status](https://travis-ci.org/ubermag/ubermag.svg?branch=master)](https://travis-ci.org/ubermag/ubermag) |
 |       | [![Build status](https://ci.appveyor.com/api/projects/status/9njdacblobx1r6qh?svg=true)](https://ci.appveyor.com/project/marijanbeg/joommf) |
 | Coverage | [![codecov](https://codecov.io/gh/joommf/joommf/branch/master/graph/badge.svg)](https://codecov.io/gh/joommf/joommf) |
-| Documentation | [![Documentation Status](https://readthedocs.org/projects/joommf/badge/?version=latest)](http://joommf.readthedocs.io/en/latest/?badge=latest) |
+| Documentation | [![Documentation Status](https://readthedocs.org/projects/ubermag/badge/?version=latest)](https://ubermag.readthedocs.io/en/latest/?badge=latest) |
 | Binder | [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/joommf/joommf/master?filepath=index.ipynb) |
 | License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
 
