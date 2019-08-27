@@ -16,7 +16,7 @@ test-docs:
 	$(PYTHON) -m pytest --doctest-modules --ignore=$(PROJECT)/tests $(PROJECT)
 
 test-ipynb:
-	$(PYTHON) -m pytest --nbval $(IPYNBPATH)
+	$(PYTHON) -m pytest --nbval-lax $(IPYNBPATH)
 
 # In test-all target test-docs is disabled because this package has no docs.
 test-all: test-test test-coverage test-ipynb
