@@ -1,6 +1,6 @@
 PROJECT=ubermag
 IPYNBPATH=docs/ipynb/*.ipynb
-CODECOVTOKEN=b0beeda5-9b5d-4418-bad5-09f209fc5e88
+CODECOVTOKEN=cdfa6461-04c2-4c85-a292-fd1475eccde8
 PYTHON?=python3
 
 test:
