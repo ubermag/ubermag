@@ -14,7 +14,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 | Documentation | [![Documentation Status](https://readthedocs.org/projects/ubermag/badge/?version=latest)](https://ubermag.readthedocs.io/en/latest/?badge=latest) |
 | Binder | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubermag/ubermag/master?filepath=docs%2Fipynb%2Findex.ipynb) |
 | Platforms | [![Platforms](https://anaconda.org/conda-forge/ubermag/badges/platforms.svg)](https://anaconda.org/conda-forge/ubermag) |
-| Downloads | [![Downloads](https://anaconda.org/conda-forge/ubermag/badges/downloads.svg)](https://anaconda.org/conda-forge/ubermag) |
+| Downloads | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ubermag/badges/downloads.svg)](https://anaconda.org/conda-forge/ubermag) |
 | License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
 
 ## About
