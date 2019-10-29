@@ -25,7 +25,7 @@ It is available on all major operating systems (Windows, MacOS, Linux) and requi
 
 ## Installation, testing, and upgrade
 
-We support installation using `conda` package manager. Instructions can be found [here](https://ubermag.readthedocs.io/en/latest/ipynb/00-tutorial-installation-testing-upgrade.html).
+We support installation using `conda` package manager. Instructions can be found [here](https://ubermag.readthedocs.io/en/latest/ipynb/01-tutorial-installation.html).
 
 ## Binder
 
