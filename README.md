@@ -1,8 +1,9 @@
 # ubermag
-Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup>, and Hans Fangohr<sup>1,2</sup>
+Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup>, Jeroen Mulkers<sup>3/sup>, Jonathan Leliaert<sup>3</sup>, and Hans Fangohr<sup>1,2</sup>
 
 <sup>1</sup> *European XFEL GmbH, Holzkoppel 4, 22869 Schenefeld, Germany*  
 <sup>2</sup> *Faculty of Engineering and the Environment, University of Southampton, Southampton SO17 1BJ, United Kingdom*  
+<sup>3</sup> *Faculty of Sciences, Ghent University, Krijgslaan 281, S12, 9000 Ghent, Belgium*  
 
 | Description | Badge |
 | --- | --- |
@@ -16,6 +17,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 | Platforms | [![Platforms](https://anaconda.org/conda-forge/ubermag/badges/platforms.svg)](https://anaconda.org/conda-forge/ubermag) |
 | Downloads | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ubermag/badges/downloads.svg)](https://anaconda.org/conda-forge/ubermag) |
 | License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
+| DOI | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3539496.svg)](https://doi.org/10.5281/zenodo.3539496) |
 
 ## About
 
@@ -49,7 +51,7 @@ If you use this package in your research, please cite it as:
 
 1. M. Beg, R. A. Pepper, and H. Fangohr. User interfaces for computational science: A domain specific language for OOMMF embedded in Python. [AIP Advances, 7, 56025](http://aip.scitation.org/doi/10.1063/1.4977225) (2017).
 
-2. DOI will be available soon
+2. M. Beg, R. A. Pepper, T. Kluyver, J. Mulkers, J. Leliaert, and Hans Fangohr. ubermag/ubermag: Meta package for Ubermag project. Zenodo. http://doi.org/10.5281/zenodo.3539496 (2019).
 
 ## Acknowledgements
 
