@@ -1,8 +1,8 @@
 # ubermag
-Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup>, Jeroen Mulkers<sup>3</sup>, Jonathan Leliaert<sup>3</sup>, and Hans Fangohr<sup>1,2</sup>
+Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>1</sup>, Thomas Kluyver<sup>2</sup>, Jeroen Mulkers<sup>3</sup>, Jonathan Leliaert<sup>3</sup>, and Hans Fangohr<sup>1,2</sup>
 
-<sup>1</sup> *European XFEL GmbH, Holzkoppel 4, 22869 Schenefeld, Germany*  
-<sup>2</sup> *Faculty of Engineering and the Environment, University of Southampton, Southampton SO17 1BJ, United Kingdom*  
+<sup>1</sup> *Faculty of Engineering and Physical Sciences, University of Southampton, Southampton SO17 1BJ, United Kingdom*  
+<sup>2</sup> *European XFEL GmbH, Holzkoppel 4, 22869 Schenefeld, Germany*  
 <sup>3</sup> *Faculty of Sciences, Ghent University, Krijgslaan 281, S12, 9000 Ghent, Belgium*  
 
 | Description | Badge |

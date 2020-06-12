@@ -21,7 +21,7 @@ test-ipynb:
 test-pycodestyle:
 	$(PYTHON) -m pycodestyle --filename=*.py .
 
-test-all: test-test test-coverage test-docs test-ipynb test-pycodestyle
+test-all: test-test test-coverage test-ipynb test-pycodestyle
 
 upload-coverage: SHELL:=/bin/bash
 upload-coverage:
