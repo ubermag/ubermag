@@ -10,16 +10,18 @@ test-test:
 	$(PYTHON) -c "import sys; import $(PROJECT); sys.exit($(PROJECT).test())"
 
 test-coverage:
-	$(PYTHON) -m pytest --cov=$(PROJECT) --cov-config .coveragerc
+	$(PYTHON) -m pytest -v --cov=$(PROJECT) --cov-config .coveragerc
 
 test-docs:
-	$(PYTHON) -m pytest --doctest-modules --ignore=$(PROJECT)/tests $(PROJECT)
+	$(PYTHON) -m pytest -v --doctest-modules --ignore=$(PROJECT)/tests $(PROJECT)
 
 test-ipynb:
-	$(PYTHON) -m pytest --nbval-lax $(IPYNBPATH)
+	$(PYTHON) -m pytest -v --nbval $(IPYNBPATH)
 
-# In test-all target test-docs is disabled because this package has no docs.
-test-all: test-test test-coverage test-ipynb
+test-pycodestyle:
+	$(PYTHON) -m pycodestyle --filename=*.py .
+
+test-all: test-test test-coverage test-docs test-ipynb test-pycodestyle
 
 upload-coverage: SHELL:=/bin/bash
 upload-coverage:

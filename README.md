@@ -13,7 +13,7 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 |       | [![Build status](https://ci.appveyor.com/api/projects/status/mybyc82pthjy2g42?svg=true)](https://ci.appveyor.com/project/marijanbeg/ubermag) |
 | Coverage | [![codecov](https://codecov.io/gh/ubermag/ubermag/branch/master/graph/badge.svg)](https://codecov.io/gh/ubermag/ubermag) |
 | Documentation | [![Documentation Status](https://readthedocs.org/projects/ubermag/badge/?version=latest)](https://ubermag.readthedocs.io/en/latest/?badge=latest) |
-| Binder | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubermag/ubermag/master?filepath=docs%2Fipynb%2Findex.ipynb) |
+| Binder | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubermag/ubermag/master?urlpath=lab/tree/docs/ipynb/index.ipynb) |
 | Platforms | [![Platforms](https://anaconda.org/conda-forge/ubermag/badges/platforms.svg)](https://anaconda.org/conda-forge/ubermag) |
 | Downloads | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ubermag/badges/downloads.svg)](https://anaconda.org/conda-forge/ubermag) |
 | License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
@@ -23,23 +23,23 @@ Marijan Beg<sup>1,2</sup>, Ryan A. Pepper<sup>2</sup>, Thomas Kluyver<sup>1</sup
 
 `ubermag` is a Python meta package for the Ubermag project.
 
-It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
-
-## Installation, testing, and upgrade
-
-We support installation using `conda` package manager. Instructions can be found [here](https://ubermag.readthedocs.io/en/latest/ipynb/01-tutorial-installation.html).
-
-## Binder
-
-This package can be used in the cloud via Binder. This does not require you to have anything installed and no files will be created on your machine. To access Binder, use this [link](https://mybinder.org/v2/gh/ubermag/ubermag/master?filepath=docs%2Fipynb%2Findex.ipynb).
+It is available on Windows, MacOS, and Linux. It requires Python 3.6+.
 
 ## Documentation
 
-Documentation is available [here](https://ubermag.readthedocs.io/en/latest/), where APIs and tutorials as Jupyter notebooks are available.
+APIs and tutorials are available in documentation. To access them, use the documentation badge in the table above.
+
+## Installation, testing, and upgrade
+
+We recommend installation using `conda` package manager. Instructions can be found in the documentation.
+
+## Binder
+
+This package can be used in the cloud via Binder. To access Binder, use the Binder badge in the table above.
 
 ## Support
 
-If you require support or have any questions, you are welcome to raise an issue in our [ubermag/help](https://github.com/ubermag/help) repository.
+If you require support, have questions, want to report a bug, or want to suggest an improvement, please raise an issue in [ubermag/help](https://github.com/ubermag/help) repository.
 
 ## License
 
@@ -47,12 +47,14 @@ Licensed under the BSD 3-Clause "New" or "Revised" License. For details, please 
 
 ## How to cite
 
-If you use this package in your research, please cite it as:
+If you use this package, please cite it as:
 
-1. M. Beg, R. A. Pepper, and H. Fangohr. User interfaces for computational science: A domain specific language for OOMMF embedded in Python. [AIP Advances, 7, 56025](http://aip.scitation.org/doi/10.1063/1.4977225) (2017).
+1. M. Beg, R. A. Pepper, and H. Fangohr. User interfaces for computational science: A domain specific language for OOMMF embedded in Python. [*AIP Advances* **7**, 56025 (2017)](http://aip.scitation.org/doi/10.1063/1.4977225).
 
 2. M. Beg, R. A. Pepper, T. Kluyver, J. Mulkers, J. Leliaert, and H. Fangohr. ubermag/ubermag: Meta package for Ubermag project. Zenodo. http://doi.org/10.5281/zenodo.3539496 (2019).
 
 ## Acknowledgements
 
-Developed as a part of [OpenDreamKit](http://opendreamkit.org/) – Horizon 2020 European Research Infrastructure project (676541).
+- [OpenDreamKit](http://opendreamkit.org/) – Horizon 2020 European Research Infrastructure project (676541)
+
+- EPSRC Programme grant on [Skyrmionics](http://www.skyrmions.ac.uk) (EP/N032128/1).

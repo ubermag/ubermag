@@ -1,9 +1,11 @@
 *~
 .#*
 *#
+.DS_Store
 docs/ipynb/*
 !docs/ipynb/*.ipynb
-__pycache__
+docs/_build
+.cache
 .coverage
 .pytest_cache/
 .ipynb_checkpoints/

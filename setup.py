@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setuptools.setup(
     name='ubermag',
-    version='0.1',
+    version='0.1.1',
     description='Meta package for Ubermag project.',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -14,14 +14,19 @@ setuptools.setup(
             'and Hans Fangohr'),
     packages=setuptools.find_packages(),
     include_package_data = True,
-    install_requires=['oommfc'],
-    classifiers=['Development Status :: 3 - Alpha',
+    python_requires='>=3.6',
+    install_requires=['oommfc==0.8.17'],
+    classifiers=['Development Status :: 5 - Production/Stable',
+                 'Intended Audience :: Education',
+                 'Intended Audience :: Developers',
+                 'Intended Audience :: Science/Research',
                  'License :: OSI Approved :: BSD License',
-                 'Programming Language :: Python :: 3 :: Only',
-                 'Operating System :: Unix',
+                 'Natural Language :: English',
                  'Operating System :: MacOS',
                  'Operating System :: Microsoft :: Windows',
+                 'Operating System :: Unix',
+                 'Programming Language :: Python :: 3 :: Only',
                  'Topic :: Scientific/Engineering :: Physics',
-                 'Intended Audience :: Science/Research',
-                 'Natural Language :: English']
+                 'Topic :: Scientific/Engineering :: Mathematics',
+                 'Topic :: Scientific/Engineering :: Visualization']
 )
