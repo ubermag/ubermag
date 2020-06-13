@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get update -y
-RUN apt-get install -y wget make
+RUN apt-get install -y wget curl make
 
 # Install Miniconda
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
