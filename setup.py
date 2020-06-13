@@ -10,10 +10,10 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://ubermag.github.io',
-    author=('Marijan Beg, Ryan A. Pepper, Thomas Kluyver, '
-            'and Hans Fangohr'),
+    author=('Marijan Beg, Ryan A. Pepper, Thomas Kluyver Jeroen Mulkers, '
+            'Jonathan Leliaert, and Hans Fangohr'),
     packages=setuptools.find_packages(),
-    include_package_data = True,
+    include_package_data=True,
     python_requires='>=3.6',
     install_requires=['oommfc==0.8.17'],
     classifiers=['Development Status :: 5 - Production/Stable',

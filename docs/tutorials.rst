@@ -3,8 +3,6 @@ Tutorials
 
 .. toctree::
    :maxdepth: 1
-   :numbered:
-   :caption: Contents:
 
    ipynb/00-tutorial-welcome
    ipynb/01-tutorial-installation
@@ -15,4 +13,3 @@ Tutorials
    ipynb/06-tutorial-support
    ipynb/07-tutorial-how-to-cite
    ipynb/08-tutorial-acknowledgements
-

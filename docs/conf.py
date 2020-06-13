@@ -18,8 +18,9 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ubermag'
-copyright = '2019, Marijan Beg, Ryan A. Pepper, Thomas Kluyver, and Hans Fangohr'
-author = 'Marijan Beg, Ryan A. Pepper, Thomas Kluyver, and Hans Fangohr'
+copyright = '2020, Marijan Beg and Hans Fangohr'
+author = ('Marijan Beg, Ryan A. Pepper, Thomas Kluyver Jeroen Mulkers, '
+          'Jonathan Leliaert, and Hans Fangohr')
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,7 +29,6 @@ author = 'Marijan Beg, Ryan A. Pepper, Thomas Kluyver, and Hans Fangohr'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.doctest',
               'sphinx.ext.napoleon',
               'sphinx.ext.mathjax',
               'nbsphinx']

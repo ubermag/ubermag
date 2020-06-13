@@ -1,12 +1,11 @@
-import ubermag as um
+import ubermag
 
 
 def test_version():
     assert isinstance(um.__version__, str)
-    assert '.' in um.__version__
+    assert '.' in ubermag.__version__
 
 
 def test_dependencies():
     assert isinstance(um.__dependencies__, list)
-    assert len(um.__dependencies__) > 0
-    
+    assert len(ubermag.__dependencies__) > 0
