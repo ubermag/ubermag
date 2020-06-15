@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setuptools.setup(
     name='ubermag',
-    version='0.2',
+    version='0.21',
     description='Meta package for Ubermag project.',
     long_description=long_description,
     long_description_content_type='text/markdown',
