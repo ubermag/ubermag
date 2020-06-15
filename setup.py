@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     include_package_data=True,
     python_requires='>=3.6',
-    install_requires=['oommfc==0.8.17',
+    install_requires=['oommfc==0.8.20',
                       'micromagneticdata==0.3'],
     classifiers=['Development Status :: 5 - Production/Stable',
                  'Intended Audience :: Education',
