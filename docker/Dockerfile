@@ -13,8 +13,9 @@ ENV PATH="/root/miniconda3/bin:${PATH}"
 RUN conda update conda
 RUN conda create -n ubermag python=3.8
 SHELL ["conda", "run", "-n", "ubermag", "/bin/bash", "-c"]  # necessary to activate environment
-RUN conda install --channel conda-forge ubermag
+RUN conda install --channel conda-forge oommf
 RUN pip install pytest-cov nbval pycodestyle
 
 COPY . /usr/local/ubermag/
 WORKDIR /usr/local/ubermag
+RUN pip install .
