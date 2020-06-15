@@ -6,7 +6,8 @@ def test():
     return pytest.main(['-m', 'not travis and not docker',
                         '-v', '--pyargs', 'ubermagutil', 'discretisedfield',
                         'ubermagtable', 'micromagneticmodel', 'oommfc',
-                        'micromagnetictests', 'ubermag'])  # pragma: no cover
+                        'micromagnetictests', 'micromagneticdata',
+                        'ubermag'])  # pragma: no cover
 
 
 __version__ = pkg_resources.get_distribution(__name__).version
