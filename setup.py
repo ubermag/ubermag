@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name='ubermag',
-    version='0.31',
+    version='0.4',
     description='Meta package for Ubermag project.',
     author=('Marijan Beg, Martin Lang, Ryan A. Pepper, Thomas Kluyver, '
             'Jeroen Mulkers, Jonathan Leliaert, and Hans Fangohr'),
