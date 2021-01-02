@@ -7,8 +7,8 @@ setuptools.setup(
     name='ubermag',
     version='0.3',
     description='Meta package for Ubermag project.',
-    author=('Marijan Beg, Martin Lang, Ryan A. Pepper, Thomas Kluyver, ''
-            Jeroen Mulkers, Jonathan Leliaert, and Hans Fangohr'),
+    author=('Marijan Beg, Martin Lang, Ryan A. Pepper, Thomas Kluyver, '
+            'Jeroen Mulkers, Jonathan Leliaert, and Hans Fangohr'),
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://ubermag.github.io',
