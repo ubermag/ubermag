@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name='ubermag',
-    version='0.40',
+    version='0.50',
     description='Meta package for Ubermag project.',
     author=('Marijan Beg, Martin Lang, Ryan A. Pepper, Thomas Kluyver, '
             'Jeroen Mulkers, Jonathan Leliaert, and Hans Fangohr'),
@@ -15,8 +15,8 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     include_package_data=True,
     python_requires='>=3.8',
-    install_requires=['oommfc==0.9',
-                      'micromagneticdata==0.4'],
+    install_requires=['oommfc==0.10',
+                      'micromagneticdata==0.5'],
     classifiers=['Development Status :: 5 - Production/Stable',
                  'Intended Audience :: Education',
                  'Intended Audience :: Developers',

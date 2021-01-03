@@ -2,6 +2,8 @@
 import pytest
 import pkg_resources
 
+__version__ = pkg_resources.get_distribution(__name__).version
+
 
 def test():
     """Run all package tests.
@@ -20,7 +22,3 @@ def test():
                         'ubermagtable', 'micromagneticmodel', 'oommfc',
                         'micromagnetictests', 'micromagneticdata',
                         'ubermag', '-l'])  # pragma: no cover
-
-
-__version__ = pkg_resources.get_distribution(__name__).version
-__dependencies__ = pkg_resources.require(__name__)
