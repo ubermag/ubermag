@@ -15,7 +15,7 @@ Marijan Beg<sup>1,2</sup>, Martin Lang<sup>1</sup>, Ryan A. Pepper<sup>1</sup>, 
 | Coverage | [![codecov](https://codecov.io/gh/ubermag/ubermag/branch/master/graph/badge.svg?token=x41eX38rxJ)](https://codecov.io/gh/ubermag/ubermag) |
 | Documentation | [![Documentation Status](https://readthedocs.org/projects/ubermag/badge/?version=latest)](https://ubermag.readthedocs.io/en/latest/?badge=latest) |
 | YouTube | [![YouTube](https://img.shields.io/badge/YouTube-ubermag-blue)](https://www.youtube.com/channel/UC7MSqVQSMFV42R1jAYmKGLg) |
-| Binder | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubermag/ubermag/HEAD?urlpath=lab/tree/docs/ipynb/index.ipynb) |
+| Binder | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ubermag/ubermag/HEAD?filepath=docs%2Fipynb%2Findex.ipynb) |
 | Platforms | [![Platforms](https://anaconda.org/conda-forge/ubermag/badges/platforms.svg)](https://anaconda.org/conda-forge/ubermag) |
 | Downloads | [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ubermag/badges/downloads.svg)](https://anaconda.org/conda-forge/ubermag) |
 | License | [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
