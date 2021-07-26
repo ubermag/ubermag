@@ -15,6 +15,7 @@
     ipynb/documentation
     ipynb/ubermag-cloud
     ipynb/advanced-installation
+    changelog
     ipynb/other
 
 API Reference
