@@ -1,34 +1,8 @@
-.. mdinclude:: ../README.md
-    :start-line: 0
-    :end-line: 7
+NEW WEBSITE: https://ubermag.github.io
+======================================
 
-.. mdinclude:: ../README.md
-    :start-line: 23
-    :end-line: 28
+You should be redirected in 5 seconds automatically.
 
-.. toctree::
-    :maxdepth: 1
-    :caption: Tutorials
+.. raw:: html
 
-    ipynb/what-is-ubermag
-    ipynb/installation-testing-update
-    ipynb/documentation
-    ipynb/ubermag-cloud
-    ipynb/advanced-installation
-    ipynb/other
-
-API Reference
--------------
-.. autosummary::
-    :nosignatures:
-    :toctree: _autosummary
-    :caption: API Reference
-    :template: module-template.rst
-    :recursive:
-
-    ubermag
-
-Index
------
-
-- :ref:`genindex`
+     <meta http-equiv="Refresh" content="5; url=https://ubermag.github.io/index.html" />
