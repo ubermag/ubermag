@@ -2,6 +2,8 @@
 import pytest
 import pkg_resources
 
+from ubermag.basic_logging import setup_logging
+
 __version__ = pkg_resources.get_distribution(__name__).version
 
 
