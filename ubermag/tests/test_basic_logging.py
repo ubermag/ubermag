@@ -21,7 +21,7 @@ def check_levels(level=logging.WARNING, per_package=None):
         if per_package is None:
             assert logging.getLogger(p).level == level
         else:
-            assert logging.getLogger(p).level == per_package.get(p, 'level')
+            assert logging.getLogger(p).level == per_package.get(p, level)
 
 
 def test_setup_logging_default():
