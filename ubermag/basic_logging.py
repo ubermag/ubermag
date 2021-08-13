@@ -52,9 +52,7 @@ def setup_logging(level=logging.WARNING, package_levels=None):
     # such as matplotlib
     logging.basicConfig()
 
-    if package_levels is not None:
-        for p in package_levels:
-            logging.getLogger(p).setLevel(package_levels.get(p, level))
-    else:
-        for p in packages:
-            logging.getLogger(p).setLevel(level)
+    package_levels = package_levels if package_levels is not None else {}
+
+    for p in packages:
+        logging.getLogger(p).setLevel(package_levels.get(p, level))

@@ -17,11 +17,10 @@ def check_levels(level=logging.WARNING, per_package=None):
     # Root log level should not be modified
     assert logging.getLogger('').level == 30
 
-    if per_package is None:
-        for p in packages:
+    for p in packages:
+        if per_package is None:
             assert logging.getLogger(p).level == level
-    else:
-        for p in per_package:
+        else:
             assert logging.getLogger(p).level == per_package.get(p, 'level')
 
 
