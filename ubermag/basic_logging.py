@@ -6,17 +6,18 @@ def setup_logging(level=logging.WARNING, package_levels=None):
     """Set up basic logging for Ubermag with per-package control.
 
     This function creates a basic logger (printing to stdout) and sets the log
-    level for all packages in ubermag to ``level``. Additional, more fine-grain
+    level for all packages in Ubermag to ``level``. Additional, more fine-grain
     control is possible by passing a dictionary to ``package_levels``. Keys
     must be ubermag subpackages, values log levels.
 
     Parameters
     ----------
     level : str, int, logging.LEVEL
-        Log level used for all packages in ubermag.
+        Log level used for all packages in Ubermag.
 
-    package_levels : dict, optional Dictionary with ubermag subpackage names as
-        keys and log-levels as values. Allows fine-grain control over logging
+    package_levels : dict, optional
+        Dictionary with Ubermag subpackage names as
+        keys and log-levels as values. It allows fine-grain control over logging
         for individual packages.
 
     Example
@@ -32,7 +33,7 @@ def setup_logging(level=logging.WARNING, package_levels=None):
     >>> ubermag.setup_logging(package_levels={'oommfc': logging.DEBUG})
 
     """
-    # TODO Each packages should use a single logger.
+    # TODO Each package should use a single logger.
     packages = [
         'discretisedfield',
         'mag2exp',
@@ -52,7 +53,7 @@ def setup_logging(level=logging.WARNING, package_levels=None):
     logging.basicConfig()
 
     if package_levels is not None:
-        for p in package_levels.keys():
+        for p in package_levels:
             logging.getLogger(p).setLevel(package_levels.get(p, level))
     else:
         for p in packages:
