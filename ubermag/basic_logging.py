@@ -24,12 +24,12 @@ def setup_logging(level=logging.WARNING, package_levels=None):
     1. Setting up a basic logger with default log-level ``logging.WARNING``
 
     >>> import ubermag
-    >>> ubermag.basic_logging()
+    >>> ubermag.setup_logging()
 
     2. Setting up a basic logger with a higher log-level for ``oommfc``
 
     >>> import ubermag
-    >>> ubermag.basic_logging(package_levels={'oommfc': logging.DEBUG})
+    >>> ubermag.setup_logging(package_levels={'oommfc': logging.DEBUG})
 
     """
     # TODO Each packages should use a single logger.
