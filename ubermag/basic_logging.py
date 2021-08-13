@@ -16,9 +16,9 @@ def setup_logging(level=logging.WARNING, package_levels=None):
         Log level used for all packages in Ubermag.
 
     package_levels : dict, optional
-        Dictionary with Ubermag subpackage names as
-        keys and log-levels as values. It allows fine-grain control over logging
-        for individual packages.
+        Dictionary with Ubermag subpackage names as keys and log-levels
+        as values. It allows fine-grain control over logging for
+        individual packages.
 
     Example
     -------
