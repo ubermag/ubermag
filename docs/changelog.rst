@@ -34,6 +34,7 @@ Bug fixes
 - Removing a current term and driving the system caused a ``TypeError``.
 - ``oommfc.compute`` now works when current terms are specified in ``system.dynamics``.
 - Wrong colourbar positioning in ``discretisedfield.mpl*`` in figures containing multiple subplots.
+- Wrong compute number in ``oommfc``.
 
 0.5.1
 =====
