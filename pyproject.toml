@@ -43,8 +43,8 @@ dependencies = [
 
 [project.urls]
 homepage = "https://ubermag.github.io"
-documentation = "https://ubermag.github.io/documentation/$package"
-repository = "https://github.com/ubermag/$package"
+documentation = "https://ubermag.github.io/documentation/ubermag"
+repository = "https://github.com/ubermag/ubermag"
 
 # to define additional information we use a custom table
 # we need to own the entry for tool.NAME on PyPI
