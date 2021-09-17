@@ -54,4 +54,8 @@ doi = "10.5281/zenodo.3539461"
 copyright_holder = "Marijan Beg and Hans Fangohr"
 contributors = [
 ]
-about = ""
+about = """
+- Meta package for Ubermag project,
+
+- Logging control in Ubermag packages.
+"""
