@@ -1,5 +1,5 @@
 # ubermag
-[Marijan Beg](https://github.com/@marijanbeg)<sup>1,2</sup>, [Martin Lang](https://github.com/@lang-m)<sup>2</sup>, [Samuel Holt](https://github.com/@samjrholt)<sup>3</sup>, [Ryan A. Pepper](https://github.com/@rpep)<sup>4</sup>, [Thomas Kluyver](https://github.com/@takluyver)<sup>5</sup>, [Jeroen Mulkers](https://github.com/@JeroenMulkers)<sup>6</sup>, [Jonathan Leliaert](https://github.com/@JLeliaert)<sup>6</sup>, [Hans Fangohr](https://github.com/@fangohr)<sup>2,7,8</sup>
+[Marijan Beg](https://github.com/marijanbeg)<sup>1,2</sup>, [Martin Lang](https://github.com/lang-m)<sup>2</sup>, [Samuel Holt](https://github.com/samjrholt)<sup>3</sup>, [Ryan A. Pepper](https://github.com/rpep)<sup>4</sup>, [Thomas Kluyver](https://github.com/takluyver)<sup>5</sup>, [Jeroen Mulkers](https://github.com/JeroenMulkers)<sup>6</sup>, [Jonathan Leliaert](https://github.com/JLeliaert)<sup>6</sup>, [Hans Fangohr](https://github.com/fangohr)<sup>2,7,8</sup>
 
 <sup>1</sup> *Department of Earth Science and Engineering, Imperial College London, London SW7 2AZ, UK*  
 <sup>2</sup> *Faculty of Engineering and Physical Sciences, University of Southampton, Southampton SO17 1BJ, UK*  
