@@ -14,6 +14,10 @@ authors = [
   {name = "Marijan Beg"},
   {name = "Martin Lang"},
   {name = "Samuel Holt"},
+  {name = "Ryan A. Pepper"},
+  {name = "Thomas Kluyver"},
+  {name = "Jeroen Mulkers"},
+  {name = "Jonathan Leliaert"},
   {name = "Hans Fangohr"}
 ]
 
