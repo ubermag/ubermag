@@ -36,8 +36,8 @@ Bug fixes
 - Wrong colourbar positioning in ``discretisedfield.mpl*`` in figures containing multiple subplots.
 - Wrong compute number in ``oommfc``.
 
-0.5.1
-=====
+0.51
+====
 
 - New subpackage ``discretisedfield.tools`` containing functions to operate on ``discretisedfield.Field`` objects
 - New integration syntax
