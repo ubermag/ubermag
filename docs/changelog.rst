@@ -67,6 +67,7 @@ Bug fixes
   - ``oommfc.compute`` now works when current terms are specified in
     ``system.dynamics``.
   - Wrong compute number in ``oommfc``.
+  - ``oommfc`` is choosing the wrong runner when using ``pyenv``.
 
 ``ubermagtable``
   - not properly reading ODT files when using magnetoelastic extension.
