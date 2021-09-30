@@ -17,10 +17,10 @@ New functionality
 
 ``discretisedfield``
   - Fourier transform for ``discretisedfield.Field`` (`reference
-    <https://ubermag.github.io/api/_autosummary/discretisedfield.Field.html#discretisedfield.Field.fftn>`_).
+    <https://ubermag.github.io/api/_autosummary/discretisedfield.Field.html#discretisedfield.Field.fftn>`__).
   - Custom labels for vector components in ``discretisedfield.Field``
     (`reference
-    <https://ubermag.github.io/api/_autosummary/discretisedfield.Field.html#discretisedfield.Field.components>`_).
+    <https://ubermag.github.io/api/_autosummary/discretisedfield.Field.html#discretisedfield.Field.components>`__).
   - New plotting interface for ``discretisedfield.Field`` and
     ``discretisedfield.Region`` for both ``matplotlib`` and ``K3d``. Plotting
     functions can be accessed as ``Field.mpl.*`` (and for convenience
@@ -28,21 +28,21 @@ New functionality
   - Improved lightness plotting and new contour line plot.
   - Full support for complex values in ``discretisedfield.Field``.
   - Rotations of ``discretisedfield.Field`` objects (`documentation
-    <https://ubermag.github.io/documentation/ipynb/discretisedfield/field-rotations.html>`_).
+    <https://ubermag.github.io/documentation/ipynb/discretisedfield/field-rotations.html>`__).
   - ``discretisedfield.Field`` now supports all ``numpy ufuncs``.
   - Calculation of the demag tensor and demag field in
     ``discretisedfield.tools`` (`reference
-    <https://ubermag.github.io/api/_autosummary/discretisedfield.tools.demag_tensor.html>`_).
+    <https://ubermag.github.io/api/_autosummary/discretisedfield.tools.demag_tensor.html>`__).
 
 ``mag2exp``
   - New subpackage ``mag2exp`` to simulate experimental measurement
-    (`documentation <https://ubermag.github.io/documentation/mag2exp.html>`_).
+    (`documentation <https://ubermag.github.io/documentation/mag2exp.html>`__).
 
 ``micromagneticmodel``
   - Generalisation of OOMMF extensions ``DMI_Cnv`` and ``DMI_D2d`` to support
     grains oriented along ``x``, ``y``, or ``z`` (new names, e.g. ``DMI_Cnv_z``)
     (`documentation
-    <https://ubermag.github.io/documentation/ipynb/micromagneticmodel/energy-terms.html#5.-Dzyaloshinskii-Moriya-energy>`_).
+    <https://ubermag.github.io/documentation/ipynb/micromagneticmodel/energy-terms.html#5.-Dzyaloshinskii-Moriya-energy>`__).
   - Support for arbitrary time-dependence for external magnetic fields
     (``micromagneticmodel.Zeeman``) and spin-polarised currents
     (``micromagneticmodel.Slonczewski`` and ``micromagneticmodel.ZhangLi``).
@@ -53,15 +53,15 @@ New functionality
     temperature.
   - Control over the default runner in ``oommfc`` via ``oommfc.runner`` object
     (`documentation
-    <https://ubermag.github.io/documentation/ipynb/oommfc/controlling-default-runner.html>`_).
+    <https://ubermag.github.io/documentation/ipynb/oommfc/controlling-default-runner.html>`__).
 
 ``ubermag``
   - Convenient control over logging of all subpackages via
-    ``ubermag.setup_logging`` (`documentation <https://ubermag.github.io/documentation/ipynb/ubermag/logging.html>`_).
+    ``ubermag.setup_logging`` (`documentation <https://ubermag.github.io/documentation/ipynb/ubermag/logging.html>`__).
 
 ``ubermagtable``
   - Fourier transform for ``ubermagtable`` (`documentation
-    <https://ubermag.github.io/documentation/ipynb/ubermagtable/table-fft.html>`_).
+    <https://ubermag.github.io/documentation/ipynb/ubermagtable/table-fft.html>`__).
 
 Bug fixes
 ---------
@@ -77,18 +77,18 @@ Bug fixes
 
 ``oommfc``
   - Removing a current term and driving the system caused a ``TypeError`` (`#135
-    <https://github.com/ubermag/help/issues/135>`_).
+    <https://github.com/ubermag/help/issues/135>`__).
   - ``oommfc.compute`` now works when current terms are specified in
-    ``system.dynamics`` (`#139 <https://github.com/ubermag/help/issues/139>`_).
+    ``system.dynamics`` (`#139 <https://github.com/ubermag/help/issues/139>`__).
   - Wrong compute number in ``oommfc``.
   - ``oommfc`` is choosing the wrong runner when using ``pyenv`` (`#172
-    <https://github.com/ubermag/help/issues/172>`_).
+    <https://github.com/ubermag/help/issues/172>`__).
 
 ``ubermagtable``
   - Error in reading ODT files when using magnetoelastic extension (`#14
-    <https://github.com/ubermag/ubermagtable/issues/14>`_).
+    <https://github.com/ubermag/ubermagtable/issues/14>`__).
   - Multiple columns with the same name in ``ubermagtable`` (`#118
-    <https://github.com/ubermag/help/issues/118>`_).
+    <https://github.com/ubermag/help/issues/118>`__).
 
 0.51
 ====
