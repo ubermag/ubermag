@@ -1,0 +1,76 @@
+[build-system]
+# 40.8.0 is the first version compatible with PEP 517
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ubermag"
+version = "0.60.0"
+description = "Meta package for Ubermag project."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+
+authors = [
+  {name = "Marijan Beg"},
+  {name = "Martin Lang"},
+  {name = "Samuel Holt"},
+  {name = "Ryan A. Pepper"},
+  {name = "Thomas Kluyver"},
+  {name = "Jeroen Mulkers"},
+  {name = "Jonathan Leliaert"},
+  {name = "Hans Fangohr"}
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+
+dependencies = [
+  "ubermagutil==0.60.0",
+  "discretisedfield==0.60.0",
+  "ubermagtable==0.60.0",
+  "micromagneticmodel==0.60.0",
+  "micromagneticdata==0.60.0",
+  "micromagnetictests==0.60.0",
+  "oommfc==0.60.0",
+  "mag2exp==0.60.0"
+]
+
+# [project.optional-dependencies]
+# test = [...]
+
+[project.urls]
+homepage = "https://ubermag.github.io"
+documentation = "https://ubermag.github.io/documentation/ubermag"
+repository = "https://github.com/ubermag/ubermag"
+
+# to define additional information we use a custom table
+# we need to own the entry for tool.NAME on PyPI
+# see: https://www.python.org/dev/peps/pep-0518/#tool-table
+[tool.ubermag]
+doi = "10.5281/zenodo.3539461"
+copyright_holder = "Marijan Beg and Hans Fangohr"
+contributors = [
+
+]
+about = """
+- Meta package for Ubermag project,
+
+- Logging control in Ubermag packages.
+"""
+
+[tool.coverage.run]
+omit = ["ubermag/tests/*"]

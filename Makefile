@@ -1,23 +1,23 @@
 PROJECT=ubermag
-IPYNBPATH=docs/ipynb/*.ipynb
+IPYNBPATH=docs/*.ipynb
 PYTHON?=python
 
 test-unittests:
 	$(PYTHON) -c "import sys; import $(PROJECT); sys.exit($(PROJECT).test())"
 
 test-coverage:
-	$(PYTHON) -m pytest -v --cov=$(PROJECT) --cov-report=xml --cov-config .coveragerc
+	$(PYTHON) -m pytest -v --cov=$(PROJECT) --cov-report=xml
 
 test-docs:
 	$(PYTHON) -m pytest -v --doctest-modules --ignore=$(PROJECT)/tests $(PROJECT)
 
 test-ipynb:
-	$(PYTHON) -m pytest -v --nbval-lax $(IPYNBPATH)
+	$(PYTHON) -m pytest -v --nbval $(IPYNBPATH)
 
 test-pycodestyle:
 	$(PYTHON) -m pycodestyle --filename=*.py .
 
-test-all: test-unittests test-coverage test-docs test-ipynb test-pycodestyle
+test-all: test-unittests test-docs test-ipynb test-pycodestyle
 
 build-dists:
 	rm -rf dist/
@@ -25,3 +25,4 @@ build-dists:
 
 release: build-dists
 	twine upload dist/*
+
