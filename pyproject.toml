@@ -12,14 +12,14 @@ requires-python = ">=3.8"
 license = {file = "LICENSE"}
 
 authors = [
-  {name = "Marijan Beg"},
-  {name = "Martin Lang"},
-  {name = "Samuel Holt"},
-  {name = "Ryan A. Pepper"},
-  {name = "Thomas Kluyver"},
-  {name = "Jeroen Mulkers"},
-  {name = "Jonathan Leliaert"},
-  {name = "Hans Fangohr"}
+    {name = "Marijan Beg"},
+    {name = "Martin Lang"},
+    {name = "Samuel Holt"},
+    {name = "Ryan A. Pepper"},
+    {name = "Thomas Kluyver"},
+    {name = "Jeroen Mulkers"},
+    {name = "Jonathan Leliaert"},
+    {name = "Hans Fangohr"}
 ]
 
 classifiers = [
@@ -39,23 +39,34 @@ classifiers = [
 ]
 
 dependencies = [
-  "ubermagutil==0.60.0",
-  "discretisedfield==0.60.0",
-  "ubermagtable==0.60.0",
-  "micromagneticmodel==0.60.0",
-  "micromagneticdata==0.60.0",
-  "micromagnetictests==0.60.0",
-  "oommfc==0.60.0",
-  "mag2exp==0.60.0"
+    "ubermagutil==0.60.0",
+    "discretisedfield==0.60.0",
+    "ubermagtable==0.60.0",
+    "micromagneticmodel==0.60.0",
+    "micromagneticdata==0.60.0",
+    "micromagnetictests==0.60.0",
+    "oommfc==0.60.0",
+    "mag2exp==0.60.0"
 ]
 
-# [project.optional-dependencies]
-# test = [...]
+[project.optional-dependencies]
+dev = [
+    "build",
+    "pre-commit",
+    "twine"
+]
+test = [
+    "nbval",
+    "pytest",
+    "pytest-cov"
+]
 
 [project.urls]
 homepage = "https://ubermag.github.io"
 documentation = "https://ubermag.github.io/documentation/ubermag"
 repository = "https://github.com/ubermag/ubermag"
+
+
 
 # to define additional information we use a custom table
 # we need to own the entry for tool.NAME on PyPI
@@ -64,7 +75,6 @@ repository = "https://github.com/ubermag/ubermag"
 doi = "10.5281/zenodo.3539495"
 copyright_holder = "Marijan Beg and Hans Fangohr"
 contributors = [
-
 ]
 about = """
 - Meta package for Ubermag project,
