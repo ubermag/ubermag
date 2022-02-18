@@ -1,4 +1,4 @@
-"""Main package"""
+"""Meta package for the Ubermag project."""
 import pytest
 import pkg_resources
 
