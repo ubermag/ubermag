@@ -1,5 +1,6 @@
-import ubermag
 import logging
+
+import ubermag
 
 
 def check_levels(level=logging.WARNING, per_package=None):

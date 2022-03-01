@@ -1,6 +1,6 @@
 """Meta package for the Ubermag project."""
-import pytest
 import pkg_resources
+import pytest
 
 from ubermag.basic_logging import setup_logging
 
