@@ -19,8 +19,21 @@ def test():
     >>> # ubermag.test()
 
     """
-    return pytest.main(['-m', 'not travis and not docker',
-                        '-v', '--pyargs', 'ubermagutil', 'discretisedfield',
-                        'ubermagtable', 'micromagneticmodel', 'oommfc',
-                        'micromagnetictests', 'micromagneticdata', 'mag2exp',
-                        'ubermag', '-l'])  # pragma: no cover
+    return pytest.main(
+        [
+            "-m",
+            "not travis and not docker",
+            "-v",
+            "--pyargs",
+            "ubermagutil",
+            "discretisedfield",
+            "ubermagtable",
+            "micromagneticmodel",
+            "oommfc",
+            "micromagnetictests",
+            "micromagneticdata",
+            "mag2exp",
+            "ubermag",
+            "-l",
+        ]
+    )  # pragma: no cover

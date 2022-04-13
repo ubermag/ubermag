@@ -35,22 +35,26 @@ def setup_logging(level=logging.WARNING, package_levels=None):
     """
     # TODO Each package should use a single logger.
     packages = [
-        'discretisedfield',
-        'mag2exp',
-        'micromagneticdata',
-        'micromagneticmodel',
-        'micromagnetictests',
-        'oommfc',
-        'ubermagtable',
-        'ubermagutil',
+        "discretisedfield",
+        "mag2exp",
+        "micromagneticdata",
+        "micromagneticmodel",
+        "micromagnetictests",
+        "oommfc",
+        "ubermagtable",
+        "ubermagutil",
     ]
 
     # No change of the global log level to avoid logs from other packages
     # e.g. matplotlib
     # no fixed columns because (name) and (pathname) vary too much
-    logging.basicConfig(format='%(asctime)s,%(msecs)d  %(name)s:%(levelname)s'
-                        '  [%(pathname)s:%(funcName)s:%(lineno)d] %(message)s',
-                        datefmt='%Y-%m-%d:%H:%M:%S')
+    logging.basicConfig(
+        format=(
+            "%(asctime)s,%(msecs)d  %(name)s:%(levelname)s"
+            "  [%(pathname)s:%(funcName)s:%(lineno)d] %(message)s"
+        ),
+        datefmt="%Y-%m-%d:%H:%M:%S",
+    )
 
     package_levels = package_levels if package_levels is not None else {}
 
