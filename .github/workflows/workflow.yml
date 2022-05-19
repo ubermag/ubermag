@@ -40,8 +40,9 @@ jobs:
     - name: Documentation tests
       run: invoke test.docs
 
-    - name: Jupyter notebook tests
-      run: invoke test.ipynb
+    # no notebooks in ubermag (test would fail)
+    # - name: Jupyter notebook tests
+    #   run: invoke test.ipynb
 
     - name: Upload coverage to Codecov.io
       uses: codecov/codecov-action@v1
