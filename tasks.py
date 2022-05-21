@@ -53,7 +53,7 @@ def all(c):
         try:
             cmd(c)
         except Exit as e:
-            if e.code != pytest.ExitCode.OK:
+            if e.code not in {pytest.ExitCode.OK, pytest.ExitCode.NO_TESTS_COLLECTED}:
                 raise e
     raise Exit(code=pytest.ExitCode.OK)
 
