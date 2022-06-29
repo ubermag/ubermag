@@ -2,7 +2,6 @@
 import os
 import shutil
 
-import iniconfig
 import pytest
 import tomli
 from invoke import Collection, Exit, task
@@ -53,7 +52,7 @@ def all(c):
         try:
             cmd(c)
         except Exit as e:
-            if e.code not in {pytest.ExitCode.OK, pytest.ExitCode.NO_TESTS_COLLECTED}:
+            if e.code != pytest.ExitCode.OK:
                 raise e
     raise Exit(code=pytest.ExitCode.OK)
 
@@ -106,13 +105,8 @@ def release(c):
         if e.code != pytest.ExitCode.OK:
             raise e
 
-    version = iniconfig.IniConfig("setup.cfg").get("metadata", "version")
-    # sanity checks while we have two places containing the version.
     with open("pyproject.toml", "rb") as f:
-        toml_version = tomli.load(f)["project"]["version"]
-    assert (
-        toml_version == version
-    ), "Different versions in pyproject.toml and setup.cfg. Aborting."
+        version = tomli.load(f)["project"]["version"]
 
     c.run(f"git tag {version}")  # fails if the tag exists
     c.run("git tag -f latest")  # `latest` tag for binder
