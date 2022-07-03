@@ -31,6 +31,7 @@ def test():
             "micromagnetictests",
             "micromagneticdata",
             "mag2exp",
+            # "mumax3c",  # mumax3 is not necessarily available -> no tests
             "ubermag",
             "-l",
         ]
