@@ -2,6 +2,8 @@
 import pkg_resources
 import pytest
 
+from .info import debug_info
+
 __version__ = pkg_resources.get_distribution(__name__).version
 
 
