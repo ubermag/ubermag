@@ -1,10 +1,24 @@
 #+TITLE: Style guide for Ubermag
 
-Based on discussions during the summer 2022 workshop:
+* Introduction
 
-1. In general we use British spelling in documentation and source code.
+Based on discussions during the summer 2022 workshop, and updated during winter
+2022 workshop.
 
-2. There are a few exceptions where the use of American spelling is widespread
-   and using the British spelling would deviate from established practice.
+* British versus American spelling
 
-   Examples include ~color~ and ~center~.
+- We use British spelling in documentation and source code.
+
+- Exception: there are situations where we pass on arguments to ~matplotlib~,
+  ~holoviews~ and other packages. For this to work and where these use American
+  spelling, we have to use American spelling, too (such as ~color~ for example).
+
+* Ubermag
+
+The spelling of the Ubermag project is "Ubermag", with a capital "U".
+
+Where we refer to the Python package ~ubermag~, we use the spelling that is
+technically correct (i.e. all letters lowercase) and use a monospace font to
+express this in documentation. The same applies to the conda package ~ubermag~.
+
+
