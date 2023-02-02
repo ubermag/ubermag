@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ubermag"
-version = "0.66.0"
+version = "0.66.1"
 description = "Meta package for Ubermag project."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -40,7 +40,7 @@ classifiers = [
 
 dependencies = [
     "ubermagutil==0.63.1",
-    "discretisedfield==0.65.0",
+    "discretisedfield==0.65.1",
     "ubermagtable==0.61.2",
     "micromagneticmodel==0.63.1",
     "micromagneticdata==0.65.0",
