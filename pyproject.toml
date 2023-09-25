@@ -47,7 +47,8 @@ dependencies = [
     "micromagnetictests==0.63.0",
     "mumax3c==0.1",
     "oommfc==0.64.0",
-    "mag2exp==0.62.1"
+    "mag2exp==0.62.1",
+    "jupyterlab>=3.0"
 ]
 
 [project.optional-dependencies]
