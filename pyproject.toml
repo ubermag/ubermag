@@ -54,6 +54,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "build",
+    "h5glance",
     "invoke",
     "nbval",
     "pre-commit",
