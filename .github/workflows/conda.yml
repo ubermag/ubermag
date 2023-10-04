@@ -47,4 +47,4 @@ jobs:
       run: mamba install -c conda-forge -y pytest nbval invoke
 
     - name: Test all
-      run: invoke test.all
+      run: invoke test.ipynb
