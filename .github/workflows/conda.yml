@@ -33,11 +33,6 @@ jobs:
         sparse-checkout: docs
         sparse-checkout-cone-mode: false
 
-    - name: debug output
-      run: |
-        ls docs
-        tree docs
-
     - name: Set up conda
       uses: conda-incubator/setup-miniconda@v2
       with:
