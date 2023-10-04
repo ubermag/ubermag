@@ -33,6 +33,71 @@ jobs:
         sparse-checkout: docs
         sparse-checkout-cone-mode: false
 
+    - name: mag2exp notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/mag2exp
+        ref: latest
+        path: docs/mag2exp
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    - name: micromagneticdata notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/micromagneticdata
+        ref: latest
+        path: docs/micromagneticdata
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    - name: micromagneticmodel notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/micromagneticmodel
+        ref: latest
+        path: docs/micromagneticmodel
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    - name: micromagnetictests notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/micromagnetictests
+        ref: latest
+        path: docs/micromagnetictests
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    # mumax3c - there are currently no notebooks
+
+    - name: oommfc notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/oommfc
+        ref: latest
+        path: docs/oommfc
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    - name: ubermagtable notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/ubermagtable
+        ref: latest
+        path: docs/ubermagtable
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    - name: ubermagutil notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/ubermagutil
+        ref: latest
+        path: docs/ubermagutil
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
     - name: Set up conda
       uses: conda-incubator/setup-miniconda@v2
       with:
