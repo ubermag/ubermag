@@ -20,9 +20,23 @@ jobs:
 
     steps:
     - name: Initialisation
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         ref: latest
+
+    - name: discretisedfield notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/discretisedfield
+        ref: latest
+        path: docs/discretisedfield
+        sparse-checkout: docs
+        sparse-checkout-cone-mode: false
+
+    - name: debug output
+      run: |
+        ls docs
+        tree docs
 
     - name: Set up conda
       uses: conda-incubator/setup-miniconda@v2
