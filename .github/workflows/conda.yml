@@ -36,7 +36,7 @@ jobs:
         path: docs/discretisedfield
         sparse-checkout: |
           docs
-          discretisedfield
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: mag2exp notebooks
@@ -47,7 +47,7 @@ jobs:
         path: docs/mag2exp
         sparse-checkout: |
           docs
-          mag2exp
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: micromagneticdata notebooks
@@ -58,7 +58,7 @@ jobs:
         path: docs/micromagneticdata
         sparse-checkout: |
           docs
-          micromagneticdata
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: micromagneticmodel notebooks
@@ -69,7 +69,7 @@ jobs:
         path: docs/micromagneticmodel
         sparse-checkout: |
           docs
-          micromagneticmodel
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: micromagnetictests notebooks
@@ -80,7 +80,7 @@ jobs:
         path: docs/micromagnetictests
         sparse-checkout: |
           docs
-          micromagnetictests
+          test_sample
         sparse-checkout-cone-mode: false
 
     # mumax3c - there are currently no notebooks
@@ -93,7 +93,7 @@ jobs:
         path: docs/oommfc
         sparse-checkout: |
           docs
-          oommfc
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: ubermagtable notebooks
@@ -104,7 +104,7 @@ jobs:
         path: docs/ubermagtable
         sparse-checkout: |
           docs
-          ubermagtable
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: ubermagutil notebooks
@@ -115,7 +115,7 @@ jobs:
         path: docs/ubermagutil
         sparse-checkout: |
           docs
-          ubermagutil
+          test_sample
         sparse-checkout-cone-mode: false
 
     - name: Set up conda
