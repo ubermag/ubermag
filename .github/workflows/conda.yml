@@ -104,14 +104,14 @@ jobs:
       with:
         auto-update-conda: true
         activate-environment: conda-environment
-        environment-file: binder/environment.yml
         miniforge-version: latest
         miniforge-variant: Mambaforge
         use-mamba: true
         python-version: ${{ matrix.python-version }}
 
-    - name: Install testing packages
-      run: mamba install -c conda-forge -y pytest nbval invoke
+    - name: Install packages
+      run: mamba install -c conda-forge -y ubermag h5glance pytest nbval invoke
+      # h5glance is required for the hdf5 specification notebook
 
     - name: Test all
       run: invoke test.all
