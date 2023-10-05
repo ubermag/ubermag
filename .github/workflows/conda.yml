@@ -105,7 +105,7 @@ jobs:
         activate-environment: conda-environment
         environment-file: binder/environment.yml
         miniforge-version: latest
-        miniforga-variant: Mambaforge
+        miniforge-variant: Mambaforge
         use-mamba: true
 
     - name: Install testing packages
