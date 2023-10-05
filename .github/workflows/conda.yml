@@ -26,13 +26,17 @@ jobs:
       with:
         ref: latest
 
+    # copy notebook directory (docs) and code because some notebooks access test samples
+
     - name: discretisedfield notebooks
       uses: actions/checkout@v4
       with:
         repository: ubermag/discretisedfield
         ref: latest
         path: docs/discretisedfield
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          discretisedfield
         sparse-checkout-cone-mode: false
 
     - name: mag2exp notebooks
@@ -41,7 +45,9 @@ jobs:
         repository: ubermag/mag2exp
         ref: latest
         path: docs/mag2exp
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          mag2exp
         sparse-checkout-cone-mode: false
 
     - name: micromagneticdata notebooks
@@ -50,7 +56,9 @@ jobs:
         repository: ubermag/micromagneticdata
         ref: latest
         path: docs/micromagneticdata
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          micromagneticdata
         sparse-checkout-cone-mode: false
 
     - name: micromagneticmodel notebooks
@@ -59,7 +67,9 @@ jobs:
         repository: ubermag/micromagneticmodel
         ref: latest
         path: docs/micromagneticmodel
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          micromagneticmodel
         sparse-checkout-cone-mode: false
 
     - name: micromagnetictests notebooks
@@ -68,7 +78,9 @@ jobs:
         repository: ubermag/micromagnetictests
         ref: latest
         path: docs/micromagnetictests
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          micromagnetictests
         sparse-checkout-cone-mode: false
 
     # mumax3c - there are currently no notebooks
@@ -79,7 +91,9 @@ jobs:
         repository: ubermag/oommfc
         ref: latest
         path: docs/oommfc
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          oommfc
         sparse-checkout-cone-mode: false
 
     - name: ubermagtable notebooks
@@ -88,7 +102,9 @@ jobs:
         repository: ubermag/ubermagtable
         ref: latest
         path: docs/ubermagtable
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          ubermagtable
         sparse-checkout-cone-mode: false
 
     - name: ubermagutil notebooks
@@ -97,7 +113,9 @@ jobs:
         repository: ubermag/ubermagutil
         ref: latest
         path: docs/ubermagutil
-        sparse-checkout: docs
+        sparse-checkout: |
+          docs
+          ubermagutil
         sparse-checkout-cone-mode: false
 
     - name: Set up conda
