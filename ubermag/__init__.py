@@ -1,10 +1,11 @@
 """Meta package for the Ubermag project."""
-import pkg_resources
+import importlib.metadata
+
 import pytest
 
 from .info import debug_info
 
-__version__ = pkg_resources.get_distribution(__name__).version
+__version__ = importlib.metadata.version(__package__)
 
 
 def test():
