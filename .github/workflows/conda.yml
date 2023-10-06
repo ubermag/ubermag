@@ -12,27 +12,125 @@ jobs:
   conda:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
     defaults:
       run:
         shell: bash -l {0}
 
     steps:
     - name: Initialisation
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         ref: latest
+
+    # copy notebook directory (docs) and code because some notebooks access test samples
+
+    - name: discretisedfield notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/discretisedfield
+        ref: latest
+        path: docs/discretisedfield
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    - name: mag2exp notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/mag2exp
+        ref: latest
+        path: docs/mag2exp
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    - name: micromagneticdata notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/micromagneticdata
+        ref: latest
+        path: docs/micromagneticdata
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    - name: micromagneticmodel notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/micromagneticmodel
+        ref: latest
+        path: docs/micromagneticmodel
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    - name: micromagnetictests notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/micromagnetictests
+        ref: latest
+        path: docs/micromagnetictests
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    # mumax3c - there are currently no notebooks
+
+    - name: oommfc notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/oommfc
+        ref: latest
+        path: docs/oommfc
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    - name: ubermagtable notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/ubermagtable
+        ref: latest
+        path: docs/ubermagtable
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
+
+    - name: ubermagutil notebooks
+      uses: actions/checkout@v4
+      with:
+        repository: ubermag/ubermagutil
+        ref: latest
+        path: docs/ubermagutil
+        sparse-checkout: |
+          docs
+          test_sample
+        sparse-checkout-cone-mode: false
 
     - name: Set up conda
       uses: conda-incubator/setup-miniconda@v2
       with:
         auto-update-conda: true
         activate-environment: conda-environment
-        environment-file: binder/environment.yml
+        miniforge-version: latest
+        miniforge-variant: Mambaforge
+        use-mamba: true
+        python-version: ${{ matrix.python-version }}
 
-    - name: Install testing packages
-      run: conda install -c conda-forge -y pytest nbval invoke
+    - name: Install packages
+      run: mamba install -c conda-forge -y ubermag h5glance pytest nbval invoke
+      # h5glance is required for the hdf5 specification notebook
 
     - name: Test all
       run: invoke test.all
