@@ -39,7 +39,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "ubermagutil==0.63.1",
+    "ubermagutil==0.63.2",
     "discretisedfield==0.65.1",
     "ubermagtable==0.61.2",
     "micromagneticmodel==0.63.1",
