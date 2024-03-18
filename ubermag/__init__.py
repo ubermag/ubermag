@@ -1,4 +1,5 @@
 """Meta package for the Ubermag project."""
+
 import importlib.metadata
 
 import pytest
