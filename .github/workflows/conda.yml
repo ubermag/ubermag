@@ -119,7 +119,7 @@ jobs:
         sparse-checkout-cone-mode: false
 
     - name: Set up conda
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         auto-update-conda: true
         activate-environment: conda-environment
