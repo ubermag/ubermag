@@ -4,7 +4,7 @@ import importlib.metadata
 
 import pytest
 
-from .info import debug_info
+from .info import debug_info as debug_info
 
 __version__ = importlib.metadata.version(__package__)
 
