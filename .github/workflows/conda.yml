@@ -26,6 +26,9 @@ jobs:
       with:
         ref: latest
 
+    - name: Setup headless display
+      uses: pyvista/setup-headless-display-action@v2
+
     # copy notebook directory (docs) and code because some notebooks access test samples
 
     - name: discretisedfield notebooks
