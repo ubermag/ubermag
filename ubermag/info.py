@@ -27,7 +27,7 @@ def debug_info():
     for pkg, calculator in [("oommfc", "OOMMF"), ("mumax3c", "Mumax3")]:
         try:
             module = importlib.import_module(pkg)
-            runner = module.runner.__getattribute__("runner")
+            runner = module.runner.runner
         except OSError as e:
             info_str += f"{calculator}: {e}\n"
         else:
