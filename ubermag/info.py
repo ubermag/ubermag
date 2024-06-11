@@ -19,7 +19,7 @@ def debug_info():
         "ubermag",
     ]:
         module = importlib.import_module(pkg)
-        version = getattr(module, "__version__")
+        version = module.__version__
         info_str += f"{pkg}: {version}\n"
 
     info_str += "\n"
@@ -27,7 +27,7 @@ def debug_info():
     for pkg, calculator in [("oommfc", "OOMMF"), ("mumax3c", "Mumax3")]:
         try:
             module = importlib.import_module(pkg)
-            runner = getattr(module, "runner").__getattribute__("runner")
+            runner = module.runner.runner
         except OSError as e:
             info_str += f"{calculator}: {e}\n"
         else:
