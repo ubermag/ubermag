@@ -1,0 +1,2 @@
+# mark omf files as binary
+*.omf -text
