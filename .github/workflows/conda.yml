@@ -127,7 +127,6 @@ jobs:
         auto-update-conda: true
         activate-environment: conda-environment
         miniforge-version: latest
-        miniforge-variant: Mambaforge
         use-mamba: true
         python-version: ${{ matrix.python-version }}
 
