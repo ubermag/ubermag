@@ -14,7 +14,7 @@
 
 | Description | Badge |
 | --- | --- |
-| Tests | [![tests](https://github.com/ubermag/ubermag/actions/workflows/tests.yml/badge.svg)](https://github.com/ubermag/ubermag/actions/workflows/tests.yml) |
+| Tests | [![tests](https://github.com/ubermag/ubermag/actions/workflows/test.yml/badge.svg)](https://github.com/ubermag/ubermag/actions/workflows/test.yml) |
 |       | [![conda](https://github.com/ubermag/ubermag/workflows/conda/badge.svg)](https://github.com/ubermag/ubermag/actions?query=workflow%3Aconda) |
 | Linting | [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ubermag/ubermag/master.svg)](https://results.pre-commit.ci/latest/github/ubermag/ubermag/master) |
 |         | [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) |
