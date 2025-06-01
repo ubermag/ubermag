@@ -8,7 +8,8 @@ version = "2024.08"
 description = "Meta package for Ubermag project."
 readme = "README.md"
 requires-python = ">=3.9"
-license = {file = "LICENSE"}
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
 
 authors = [
     {name = "Marijan Beg"},
@@ -27,7 +28,6 @@ classifiers = [
     "Intended Audience :: Education",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
     "Operating System :: MacOS",
     "Operating System :: Microsoft :: Windows",
@@ -111,6 +111,9 @@ known-local-folder = ["ubermag"]
 filterwarnings = [
     "error",
     "ignore:((.|\n)*)Sentinel is not a public part of the traitlets API((.|\n)*)",  # dependency of k3d
+]
+markers = [
+    "pyvista",
 ]
 
 [tool.setuptools.packages.find]
