@@ -29,6 +29,8 @@ jobs:
     steps:
     - name: Initialisation
       uses: actions/checkout@v4
+    - name: Setup headless display
+      uses: pyvista/setup-headless-display-action@v4
     - name: Set up conda
       uses: conda-incubator/setup-miniconda@v3
       with:
