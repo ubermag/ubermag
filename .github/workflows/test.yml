@@ -20,17 +20,15 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-26-intel, windows-latest]
         python-version: ["3.13"]
-        include:
-          - os: ubuntu-latest
-            python-version: "3.9"
+        #include:
+        #  - os: ubuntu-latest
+        #    python-version: "3.9"
     defaults:
       run:
         shell: bash -l {0}
     steps:
     - name: Initialisation
       uses: actions/checkout@v4
-    - name: Setup headless display
-      uses: pyvista/setup-headless-display-action@v4
     - name: Set up conda
       uses: conda-incubator/setup-miniconda@v3
       with:
