@@ -31,6 +31,11 @@ def debug_info():
         except OSError as e:
             info_str += f"{calculator}: {e}\n"
         else:
-            info_str += f"{calculator}: {runner}, {runner.version}\n"
+            # not every runner exposes a version (e.g. mumax3c runners)
+            version = getattr(runner, "version", None)
+            if version:
+                info_str += f"{calculator}: {runner}, {version}\n"
+            else:
+                info_str += f"{calculator}: {runner}\n"
 
     return info_str
